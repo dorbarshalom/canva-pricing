@@ -5,14 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Canva pricing</title>
-    <style>
-        body{
-            background-color: #f2f2f2;
-        }
-        .PriceColumn-image{
-            max-width: 80px;
-        }
-    </style>
+    
   </head>
   <body>
     <h1>D-ID for Canva</h1>
@@ -20,5 +13,24 @@
 <stripe-pricing-table pricing-table-id="prctbl_1QYjqrJxEKZ2zAynsQq7zILx"
 publishable-key="pk_live_51L7NCbJxEKZ2zAyn651O6chNCuCgENe7y8memlPzrnHpjQdZXuHPRtrojXOwjOgEWunQn0C2WuPkIybPZukl48IQ00b8Y90VXt">
 </stripe-pricing-table>
-  </body>
+  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Wait for the DOM to load
+        $('<style>')
+            .prop('type', 'text/css')
+            .html(`
+                 body{
+                   background-color: #f2f2f2;
+                }
+                .PriceColumn-image{
+                    max-width: 80px;
+                }
+            `)
+            .appendTo('head');
+    });
+</script>
+
+</body>
 </html>
